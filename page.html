@@ -1,0 +1,94 @@
+<html>
+	<head>
+		<title>TODO APP</title>
+		<style>
+			h1{
+				text-align: center;
+				font-size: 40px;
+				font-family: sans-serif;
+				padding: 5px;
+			}
+			
+			#txt1{
+				height: 30px;
+				width: 240px;
+				font-size: 20px;
+				margin: 20px auto auto 500px;
+				padding: 10px;
+				text-align: center;
+				height: 30px;
+			}
+			
+			#add{
+				margin: 20px auto auto 440px;
+				height: 35px;
+				width: 180px;
+				font-size: 20px;
+				border: 1px solid grey;
+				padding: 5px;
+				background-color: rgba(0, 0, 1, 0.48);
+				font-weight: bold;
+				color: #ececec;
+				text-align: center;
+			}
+			#add:hover{
+				background-color: rgba(0, 167, 0, 0.48);
+				cursor: pointer;
+				color: white;
+				border: 1px solid black;
+				
+			}
+			#delete{
+				
+				margin: 20px auto auto auto;
+				height: 35px;
+				width: 180px;
+				font-size: 20px;
+				border: 1px solid grey;
+				padding: 5px;
+				background-color: rgba(0, 0, 1, 0.48);
+				font-weight: bold;
+				color: #ececec;
+				text-align: center;
+			}
+			
+			#delete:hover{
+				background-color: red;
+				cursor: pointer;
+				color: white;
+				border: 1px solid black;
+			}
+			
+			table{
+				margin: 20px auto auto auto;
+				/*border: 1px solid black;*/
+				width: 800px;
+			}
+			p{
+				text-align: center;
+				font-size: 25px;
+				margin: auto auto 5px auto;
+				font-family: sans-serif;
+			}
+			
+			input[type = text]{
+				height: 30px;
+				font-size: 20px;
+				color: brown;
+				padding: 5px;
+			}
+		</style>
+		<script src="app.js"></script>
+	</head>
+	<body>
+		<h1>To-Do List</h1>
+		<hr style="width: 400px"/>
+ <input type="textbox" id="txt1" placeholder="Enter Task" /><br/>
+    <input type="button" value="Add List" id="add" onclick="addList('ToDoListTable')" />
+    <input type="button" value="Delete List" id="delete" onclick="deleteList('ToDoListTable')" />
+     <table id="ToDoListTable" width="350px">
+        </table>
+
+<p>Total Work pending <b id="pTotal"></b>  = </p>
+	</body>
+</html>
